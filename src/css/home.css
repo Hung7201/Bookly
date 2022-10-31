@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+  /* begin header 1 */
+
+.header .header-1 {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 15px 152px;
+}
+
+.header-1 .logo {
+  font-size: 25px;
+  font-weight: 650;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 50px;
+}
+
+.header-1 .logo-icon {
+  color: green;
+}
+
+#search-box {
+  padding: 14px;
+  width: 450px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+.search-form .search-icon {
+    padding-right: 15px;
+    position: absolute;
+    right: 0;
+}
+
+.search-form .search-icon:hover {
+    color: green;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.icons {
+  line-height: 50px;
+  font-size: 24px;
+}
+
+.icons a:hover,
+#login-btn:hover{
+  color: green;
+  cursor: pointer;
+}
+
+#login-btn {
+  margin-left: 16px;
+}
+
+
+/*begin login modal */
+.open {
+  display: flex !important;
+}
+
+.modal {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.popup-login {
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px grey;
+  height: 500px;
+  border-radius: 10px;
+  animation: modalFadeIn ease 0.6s;
+  z-index: 1;
+}
+
+.modal-heading h1 {
+  text-align: center;
+  padding: 20px 0
+}
+
+.popup-login form {
+  padding: 0 20px;
+}
+
+.input-form {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  margin: 18px 0;
+  border-radius: 6px;
+}
+
+.modal-footer .submit-btn {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  border: 1px solid #ccc;
+  background-color: #27ae60;
+  color: white;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 22px;
+  margin-top: 18px;
+}
+
+.modal-footer .submit-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.modal-footer a {
+  display: inline-block;
+  color: #27ae60;
+  text-decoration-line: underline;
+  margin: 3px 20;
+  margin: 12px 20px;
+
+}
+
+.modal-footer .check-box {
+  margin-left: 20px;
+}
+
+.modal-heading {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 14px;
+  font-size: 32px;
+  line-height: 100%;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.close-btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+
+@keyframes modalFadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-70px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* end login modal */
+
+
+  /* end header 1 */
+
+  /* begin header 2 */
+.header-2 {
+  background-color: #27ae60;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.header-2 .navbar a {
+  color: white;
+  font-size: 20px;
+  padding: 14px 16px;
+}
+
+.header-2 .navbar a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.header-2 .navbar a:first-child {
+    margin-left: 34px;
+}
+  /* end header 2 */
+ /* HOME */
+.home{
+  background-image: url("../img/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.home .home-content {
+  display: inline-block;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+.home .home-content .content{
+  flex:1 1 40px;
+ 
+}
+.home .home-content .books-slider {
+  flex:1 1 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+.home .home-content .books-slider a img {
+  height: 25rem;
+}
+.home .home-content .books-slider a:hover img {
+  transform: scale(0.9);
+}
+.home .home-content .books-slider .stand{
+  width: 100%;
+  margin-top: -2rem;
+}
+.home .home-content .content h3{
+  color:#000;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 25px;
+}
+.home .home-content .content p{
+  color:black;
+  font-size: 16px;
+  line-height: 2;
+  padding: 3px 0;
+  text-align: center;
+}
+.home .home-content .books-slider .swiper-wrapper .swiper-slide{
+  width: 33,33%;
+  padding-left:22px ;
+}
+.home .home-content .content  .home-btn {
+  display: inline-block;
+  padding: 12px 14px;
+  background-color:green;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 680px;
+  border-radius: 5px;
+
+}
+.home .home-content .content .home-btn:hover{
+  background-color:green;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.icons-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap:1.5rem;
+ 
+}
+
+.icons-container .icons{
+  display: flex;
+  align-items: center;
+  gap:1.5rem;
+  padding:2rem 0;
+  justify-content: center;
+}
+
+.icons-container .icons i{
+  font-size: 2.5rem;
+  color:green;
+}
+
+.icons-container .icons h3{
+  font-size: 1.7rem;
+  color: #444;
+  padding-bottom: .5rem;
+}
+
+.icons-container .icons p{
+  font-size: 1.4rem;
+  color: #666;
+}
+
+/* Footer */
+.contact-footer{
+  text-align: center;
+}
+.contact-footer h3{
+  font-size: 25px;
+  margin-top: 25px;
+  opacity: 0.9;
+}
+.contact-footer a{
+  font-size: 16px;
+  margin: 20px;
+  display: inline-block;
+  opacity: 0.8;;
+}
+.section-footer {
+  text-align: center;
+}
+.section-footer a{
+  line-height: 33px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background: green;
+  opacity: 0.8;
+  margin: 8px 45px;
+  border-radius: 50%;
+  width: 35px;
+  height: 33px;
+}
+.section-footer a:hover {
+  background-color: #ccc;
+  cursor: pointer;
+  opacity: 0.9;
+}
+hr{
+  margin-top: 12px;
+  opacity: 0.3;
+}
+.end-footer{
+  text-align: center;
+  font-size: 23px;
+  margin: 25px 0;
+  opacity: 0.7;
+}
+

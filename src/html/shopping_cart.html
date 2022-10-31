@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://kit.fontawesome.com/4b38e88f6d.js" crossorigin="anonymous"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../font/fontawesome-free-6.2.0-web (1)/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="../css/shopping_cart.css">
+    <link rel="shortcut icon" href="../img/faivcon/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- begin header -->
+        <header class="header">
+    
+            <div class="header-1">
+        
+                <a href="#" class="logo"> <i class="fas fa-book logo-icon"></i> Bookly </a>
+        
+                <form action="" class="search-form">
+                    <input type="search" name="" placeholder="Search here..." id="search-box">
+                    <label for="search-box" class="fas fa-search search-icon"></label>
+                </form>
+        
+                <div class="icons">
+                    <a href="shopping_cart.html" class="fas fa-shopping-cart"></a>
+                    <div id="login-btn" class="fas fa-user"></div>
+                </div>
+        
+            </div>
+            
+            <div class="header-2">
+                <nav class="navbar">
+                    <a href="home.html">Home</a>
+                    <a href="bookcase.html">Bookcase</a>
+                    <a href="about.html">About</a>
+                </nav>
+            </div>
+        </header>
+        <!-- end header -->
+
+        <!-- begin modal -->
+        <div class="modal">
+            <div class="popup-login">
+                <div class="modal-heading">
+                    <h1>Sign In</h1>
+                    <i class="fa-solid fa-xmark close-btn"></i>
+                </div>
+                <form action="">
+                    <label for="">Username</label>
+                    <br>
+                    <input required placeholder="Enter your email" class="input-form" type="text" name="" id="">
+                    <br>
+
+                    <label for="">Password</label>
+                    <br>
+                    <input required placeholder="Enter your password" class="input-form" type="password" name="" id="">
+                </form>
+                <div class="modal-footer">
+                    <input class="check-box" type="checkbox" name="" id=""> Remember me
+
+                    <button class="submit-btn" type="submit">Sign In</button>
+
+                    <a href="">Forget password ?</a>
+                    <br>
+                    <a href="">Don't have an account ?</a>
+                </div>
+            </div>
+        </div>
+        <!-- end modal -->
+
+        <!-- begin shopping cart -->
+
+           
+        <div class="content">
+            <div class="cart-content">
+                <!-- begin heading -->
+                <div class="heading-cart">
+                    <h2>Shopping Cart</h2>
+                    <h2>3 Items</h2>
+                </div>
+                <!-- end heading -->
+
+                <!-- begin products -->
+                <div class="body-cart">
+                    <table>
+                        <tr>
+                            <th>Product details</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="../img/avatar_products/NhungNguoiKhonKho.jfif" alt="" width="80px" height="100px">
+                                </div>
+                                <div class="info">
+                                    <p>Những Người Khốn Khổ</p>
+                                </div>
+                            </td>
+    
+                            <td>
+                                <div class="quantity">
+                                    <i class="fa-solid fa-minus icon-quantity"></i>
+                                    <input placeholder="1" type="number" name="" id="" min="1">
+                                    <i class="fa-solid fa-plus icon-quantity"></i>
+                                </div>
+                            </td>
+    
+                            <td>
+                                <div class="price"> $3.33 </div>
+                            </td>
+                        
+                            <td>
+                                <i class="fa-solid fa-trash-can remove-produce"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="../img/avatar_products/TamQuocDienNghia.jpg" alt="" width="80px" height="100px">
+                                </div>
+                                <div class="info">
+                                    <p>Tam Quốc Diễn Nghĩa</p>
+                                </div>
+                            </td>
+    
+                            <td>
+                                <div class="quantity">
+                                    <i class="fa-solid fa-minus icon-quantity"></i>
+                                    <input placeholder="1" type="number" name="" id="" min="1">
+                                    <i class="fa-solid fa-plus icon-quantity"></i>
+                                </div>
+                            </td>
+    
+                            <td>
+                                <div class="price"> $3.33 </div>
+                            </td>
+    
+                            <td>
+                                <i class="fa-solid fa-trash-can remove-produce"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="../img/avatar_products/CayCamNgotCuaToi.jpg" alt="" width="80px" height="100px">
+                                </div>
+                                <div class="info">
+                                    <p>Cây Cam Ngọt Của Tôi</p>
+                                </div>
+                            </td>
+    
+                            <td>
+                                <div class="quantity">
+                                    <i class="fa-solid fa-minus icon-quantity"></i>
+                                    <input placeholder="1" type="number" name="" id="" min="1">
+                                    <i class="fa-solid fa-plus icon-quantity"></i>
+                                </div>
+                            </td>
+    
+                            <td>
+                                <div class="price"> $3.33 </div>
+                            </td>
+    
+                            <td>
+                                <i class="fa-solid fa-trash-can remove-produce"></i>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="page-numbers">
+                       <div><a href="#"><i class="fa-solid fa-less-than"></i></a></div>
+
+                       <div class="numbers fi-page"><a href="#">1</a></div>
+
+                       <div class="numbers"><a href="#">2</a></div>
+
+                       <div class="numbers"><a href="#">3</a></div>
+
+                       <div >
+                        <a href="#">
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                       </div>
+                    </div>
+                    
+                    <hr color="#ccc" style="margin-top: 36px; border-top:1px;">
+                     
+                    <div class="subtotal" style="text-align: right; margin-top: 20px">
+                        <p style="display: inline-block; font-size:20px;">Subtotal (3 items): <h3 style="padding-left: 8px;">$9.99</h3></p>
+                    </div>
+
+                    <div class="return">
+                        <a href="bookcase.html" class="return-btn"><i style="color: #27ae60;" class="fa-sharp fa-solid fa-arrow-left"></i> Continue Shopping</a>
+                    </div>
+                </div>  
+                <!-- end products -->
+            </div>
+
+
+            <div class="order">
+                <div class="heading-order">
+                    <h2>Order Summary</h2>
+                </div>
+
+                <div class="body-order"> 
+                    <section class="head">
+                        <h3>3 Items</h3>
+                        <h3>$9.99</h3>
+                    </section>
+
+                    <section class="body">
+                        <label for="delivery">
+                            <i class="fa-solid fa-location-dot"></i>
+                             <h3>Delivery Address</h3>
+                        </label>
+                        <select name="" id="delivery">
+                            <option value="1">Yên Hòa, Cầu Giấy, Hà Nội</option>
+                            <option value="2">Đông Vinh, Đông Hưng, Thái Bình</option>
+                        </select>
+                        <br>
+
+                        <label for="">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <h3>Shipping</h3>
+                            <br>
+
+                            <select name="" id="">
+                                <option value="">Standard Delivery : $4</option>
+                                <option value="">Fast Delivery : $8</option>
+                            </select>
+                        </label>
+                        <br>
+
+                        <label for="voucher">
+                            <i class="fa-solid fa-tags"></i>
+                            <h3>Voucher</h3>
+                        </label>
+                        <br>
+                        <input type="text" name="" id="voucher">
+
+                        <button class="apply">Apply</button>
+
+                        <hr>
+
+
+                    </section>
+
+                    <section class="footer">
+                        <article>
+                            <h3>Total cost</h3>
+                            <h3>$13.99</h3>
+                        </article>
+
+                        <button class="check-out">CHECKOUT</button>
+                    </section>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- end shopping cart -->
+
+
+        <!-- begin payment method modal -->
+        <div class="payment-method">
+            <div class="payment-modal">
+                 <header>
+                    <i class="fa-solid fa-xmark close-pay"></i>
+                 </header>
+
+                 <section>
+                    <div class="payment-content">
+                            <h3>Payment method</h3>
+                        <div class="pay-method-img">
+                            <img width="50px" height="50px" src="../img/payment_method/visa.png" alt="">
+                            <img width="50px" height="50px" src="../img/payment_method/mastercard.jfif" alt="">
+                            <img width="50px" height="50px" src="../img/payment_method/shopee.jfif" alt="">
+                            <img width="50px" height="50px" src="../img/payment_method/paypal.png" alt="">
+                        </div>
+
+                        <form action="" id="infor-card">
+                            <label for="card-name">Name on card</label> <br>
+                            <input class="card" placeholder="PHAM VIET HUNG" type="text" name="" id="card-name" required> <br>
+
+                            <label for="card-number">Card number</label> <br>
+                            <input class="card" placeholder="4444 4444 4444 4444" type="number" name="" id="card-number" required> <br>
+
+                            <article style="width: 85%;">
+                                <div>
+                                    <label for="">Expiry date <a href="#"><i class="fa-solid fa-circle-question question-mark"></i></a></label> <br>
+                                    <input placeholder="MM/YY" type="text" name="" id="expe-date">
+                                </div>
+
+                                <div>
+                                    <label for="">Security code <a href="#"><i class="fa-solid fa-circle-question question-mark"></i></a></label> <br>
+                                    <input placeholder="XXX"  class="card" type="number" name="" id="secur-code" required>
+                                </div>
+
+                            </article>
+                        </form>
+                    </div>
+                 </section>
+
+                 <footer style="width: 85%; margin: 0 auto;">
+                    <hr style="margin-top: 24px;">
+
+                    <button class="pay"><i class="fa-solid fa-lock"></i> Pay : $13.99</button>
+                 </footer>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="../js/modal.js"></script>
+</body>   
+</html> 
